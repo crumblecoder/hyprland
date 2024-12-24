@@ -1,0 +1,1240 @@
+#!/bin/bash
+
+# Variables
+DISK=$(fzf ls /dev/)  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+#!/bin/bash#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+# Variables#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+DISCO="/dev/sdX"  # Reemplaza con el disco objetivo, como /dev/sda#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+EFI_SIZE="500MB"  # Tamaño de la partición EFI#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+PART2_FS="ext4"   # Sistema de archivos para la partición restante#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+# Verifica si eres root#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+if [[ $EUID -ne 0 ]]; then#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+   echo "Este script debe ejecutarse como root."#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+   exit 1#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+fi#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+# Asegúrate de que el disco existe#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+if [ ! -b "$DISCO" ]; then#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+   echo "El disco $DISCO no existe."#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+   exit 1#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+fi#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+# Advertencia al usuario#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+echo "¡Advertencia! Este script borrará todos los datos de $DISCO."#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+read -p "¿Estás seguro de continuar? (escribe 'SI' para continuar): " CONFIRMACION#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+if [[ "$CONFIRMACION" != "SI" ]]; then#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+    echo "Operación cancelada."#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+    exit 1#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+fi#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+# Crear tabla de particiones GPT#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+parted -s "$DISCO" mklabel gpt#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+# Crear la partición EFI#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+parted -s "$DISCO" mkpart EFI fat32 1MiB $EFI_SIZE#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+parted -s "$DISCO" set 1 boot on#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+# Crear la partición ext4 con el resto del espacio#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+parted -s "$DISCO" mkpart primary $PART2_FS $EFI_SIZE 100%#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+# Formatear la partición EFI#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+mkfs.fat -F32 "${DISCO}1"#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+echo "Partición EFI (${DISCO}1) formateada como FAT32."#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+# Formatear la partición ext4#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+mkfs.ext4 "${DISCO}2"#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+echo "Partición primaria (${DISCO}2) formateada como ext4."#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+# Resumen#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+echo "Proceso completado. Tabla de particiones GPT creada con las siguientes particiones:"#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted$(fzf ls /dev/) mklabel gpt
+
+# Create EFI partitio
+echo "1. ${DISCO}1 -> EFI (500MB)"#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted -s "$DISK" mklabel gpt
+
+# Create EFI partitio
+echo "2. ${DISCO}2 -> ext4 (resto del disco)"#!/bin/bash
+
+# Variables
+DISK="/dev/sdX"  # Replace with the target disk, e.g., /dev/sda
+EFI_SIZE="500MB"  # Size of the EFI partition
+PART2_FS="ext4"   # Filesystem for the remaining partition
+
+# Check if the script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root."
+   exit 1
+fi
+
+# Ensure the disk exists
+if [ ! -b "$DISK" ]; then
+   echo "The disk $DISK does not exist."
+   exit 1
+fi
+
+# Warning to the user
+echo "Warning! This script will erase all data on $DISK."
+read -p "Are you sure you want to proceed? (type 'YES' to continue): " CONFIRMATION
+if [[ "$CONFIRMATION" != "YES" ]]; then
+    echo "Operation canceled."
+    exit 1
+fi
+
+# Create GPT partition table
+parted -s "$DISK" mklabel gpt
+
+# Create EFI partitio
